@@ -30,7 +30,12 @@
             margin-right: 20px; /* Add space between the image and text */
             margin-bottom: 20px; /* Add space between the image and text */
         }
-
+         video {
+            max-width: 100%; /* Ensure the video does not exceed the width of its container */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Center the video */
+            margin: 0 auto; /* Center the video */
+        }
         /* Reset float when necessary */
         .clear-float {
             clear: both;
@@ -105,7 +110,11 @@
                     <h5 class="card-title">ChefIt App</h5>
                     <p class="card-text">The ChefIt App is an app that I have been working on in my senior capstone class. This app allows users to be able to have an all-inclusive and fun cooking experience. With features like an in-app timer and fun avatars called CookSona's that you can unlock, there is something for everyone!</p>
                     <!-- Embed GIF or video -->
-                    <img src="ChefIt.mp4" class="img-fluid" alt="ChefIt App Walkthrough">
+                  <video controls>
+                  <source src="ChefIt.mp4" type="video/mp4" alt="ChefIt App Walkthrough">
+                  <!-- Provide fallback text if the video doesn't load -->
+                  Your browser does not support the video tag.
+                  </video>
                 </div>
             </div>
 
