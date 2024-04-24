@@ -25,15 +25,15 @@
             padding: 2rem 2rem;
         }
         /* Style the photo */
-        img {
-            max-width: 100%; /* Ensures the image doesn't exceed the width of its container */
-            height: auto; /* Maintains aspect ratio */
+       img {
+            float: left; /* Change to right if you want the image on the right */
+            margin-right: 20px; /* Add space between the image and text */
+            margin-bottom: 20px; /* Add space between the image and text */
         }
 
-        /* Container for the photo */
-        .photo-container {
-            text-align: center; /* Center the image in the container */
-            margin: 20px 0;
+        /* Reset float when necessary */
+        .clear-float {
+            clear: both;
         }
     </style>  
   </head>
@@ -90,7 +90,7 @@
     </div>
         <div class="photo-container">
         <!-- Adding a photo -->
-        <img src="KeriHeadshot.JPG" alt="Keri Headshot Photo">
+        <img src="KeriHeadshot.JPG" alt="Keri Headshot Photo" width="300" height="200>
     </div>
       </section>
 
